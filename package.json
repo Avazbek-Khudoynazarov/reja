@@ -1,0 +1,21 @@
+{
+  "name": "reja",
+  "version": "1.0.0",
+  "description": "bu bizning birinchi loyihamiz",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "training": "nodemon training.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Avazbek",
+  "license": "ISC",
+  "dependencies": {
+    "button": "^1.1.1",
+    "ejs": "^3.1.8",
+    "exports": "^0.0.1",
+    "express": "^4.18.2",
+    "json": "^11.0.0",
+    "nodemon": "^2.0.20"
+  }
+}
