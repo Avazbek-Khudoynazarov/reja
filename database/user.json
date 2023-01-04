@@ -1,0 +1,20 @@
+{
+    "name": "Danny",
+    "profession": "Software Engineer",
+    "age": 25,
+    "residance": "S.Korea",
+    "adress": "S.Korea, Daegu",
+    "languages": ["Uzbek", "Korean", "English"],
+    "skills": ["HTML", "CSS", "Js", "NodeJs", "Python"],
+    "extra_skills": ["Bootstrap", "Materialize", "Styling, Sass", "Django, Flask", "GIT Knowledge " ],
+    "work_place": "IT Company",
+    "service_desc": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
+    "about_me": "Loren ipsum dolor sit amet, consectetur adipiscing elit",
+    "city": "Denau",
+    "title": ["Flower", "Seedlings", "Gardener", "Old", "New"],
+    "flower_desc": ["What is a flower?", "What is a seedling?", "Who is Gardener?"],
+    "flower_name": ["Tulip", "Daffodil", "Poppy", "Sunflower", "Bluebell", "Rose", "Snowdrop", "Cherry", "Blossom"],
+    "flower_price": ["15$", "25$", "12$", "20$", "35$", "30$", "22$", "19$", "9$"],
+    "famous_words": ["World is beautiful with flowers"],
+    "famous_name": ["Steve Jobs"]
+}
