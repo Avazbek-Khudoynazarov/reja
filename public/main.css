@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.frame {
+  width: 100%;
+
+  background-color: rgb(187, 189, 189);
+}
+
+.main_frame {
+  width: 1440px;
+  height: 1312px;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  margin-top: 50px;
+  background-color: rgb(148, 148, 148);
+}
+
+.main_frame .left_frame {
+  width: 305px;
+  height: 1315px;
+  background-color: white;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  gap: 30px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.main_frame .midd_frame {
+  position: relative;
+  width: 970px;
+  height: 1259px;
+  margin-left: 30px;
+  margin-right: 27px;
+  display: flex;
+  flex-direction: column;
+}
+.main_frame .right_frame {
+  position: relative;
+  width: 108px;
+  height: 1315px;
+  background-color: white;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main_frame .left_1 {
+  position: relative;
+  width: 228px;
+  height: 267px;
+  /* margin-top: 50px;
+  margin-left: 37px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main_frame .left_1 .left_1_1 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 156.16px;
+  height: 142.53px;
+  margin-bottom: 29.45px;
+}
+
+.main_frame .left_2 {
+  position: relative;
+  width: 221px;
+  height: 126px;
+  margin-left: 44px;
+}
+
+.main_frame .left_3 {
+  position: relative;
+  width: 200px;
+  height: 153px;
+  margin-top: 25px;
+  margin-left: 45px;
+}
+
+.main_frame .left_4 {
+  position: relative;
+  width: 220px;
+  height: 252px;
+  margin-top: 25px;
+  margin-left: 45px;
+}
+
+.main_frame .left_5 {
+  position: relative;
+  width: 186px;
+  height: 148px;
+  margin-top: 25px;
+  margin-left: 45px;
+}
+
+.icon_view {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background-color: #ffb400;
+  border-radius: 50%;
+}
+
+.left_icons {
+  display: flex;
+  gap: 15px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+
+  text-align: right;
+  text-transform: capitalize;
+  font-feature-settings: "calt" off, "kern" off;
+
+  color: #2b2b2b;
+}
+
+.title:hover {
+  background-color: #ffb400;
+}
+
+.marginer {
+  width: 220px;
+  height: 2px;
+  background-color: #f0f0f6;
+  border: 1.5px solid #f0f0f6;
+}
+
+.e_skill_icon {
+  width: 15px;
+  height: 14.97px;
+  margin-right: 8spx;
+}
+
+.section2 {
+  display: flex;
+  justify-content: flex-start;
+}
