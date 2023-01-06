@@ -16,14 +16,13 @@
   margin: auto;
   align-items: center;
   margin-top: 50px;
-  background-color: rgb(148, 148, 148);
+  background-color: white;
 }
 
 .main_frame .left_frame {
   width: 305px;
   height: 1315px;
   background-color: white;
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   /* align-items: center; */
@@ -50,14 +49,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 200px;
 }
 
 .main_frame .left_1 {
   position: relative;
   width: 228px;
   height: 267px;
-  /* margin-top: 50px;
-  margin-left: 37px; */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -164,4 +162,113 @@
 .section2 {
   display: flex;
   justify-content: flex-start;
+}
+
+.midd1 {
+  display: flex;
+  width: 971px;
+  height: 454.33px;
+  background-color: white;
+  justify-content: space-between;
+}
+.midd_section {
+  width: 500px;
+  height: 126px;
+  display: flex;
+  flex-direction: column;
+  color: #2b2b2b;
+  gap: 30px;
+}
+
+.header {
+  width: 500px;
+  height: 126px;
+}
+
+.butt1 {
+  width: 154px;
+  height: 51px;
+  background: #ffb400;
+  border-radius: 5px;
+  padding: 16px 32px;
+  gap: 10px;
+}
+
+.midd2 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  margin-top: 70px;
+}
+
+.main {
+  width: 193px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.header2 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+
+  text-align: center;
+  text-transform: capitalize;
+  font-feature-settings: "calt" off, "kern" off;
+
+  color: #767676;
+
+  text-align: center;
+}
+
+.midd2_icon {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+
+  background: #ffffff;
+}
+
+.mid2_text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 123.6%;
+
+  text-transform: capitalize;
+
+  color: #2b2b2b;
+}
+
+.mid_txt {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+
+  text-align: center;
+  text-transform: capitalize;
+  font-feature-settings: "calt" off, "kern" off;
+
+  color: #767676;
+}
+.step_icon {
+  width: 310px;
+  height: 225px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.rigt_icons {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
