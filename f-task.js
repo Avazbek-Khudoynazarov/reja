@@ -1,10 +1,14 @@
 function findDoubler(arr) {
-  let firstItem = arr[0].toLowerCase();
-  let secondItem = arr[1].toLowerCase();
-  for (let i = 0; i < secondItem.length; i++) {
-    if (firstItem.indexOf(secondItem[i]) === -1) return false;
-  }
-  return true;
+  const newarr = arr.split("");
+  // console.log(newarr);
+  const result = newarr.map((value, index) => {
+    if (value.includes(newarr[index + 1])) return true;
+    else {
+      return false;
+    }
+  });
+  return result.includes(true);
 }
-const a = findDoubler(["Mirzabek", "Ramazbek"]);
+
+const a = findDoubler("hello");
 console.log(a);
