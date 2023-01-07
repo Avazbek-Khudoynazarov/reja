@@ -24,7 +24,7 @@ app.post("/create-item", (req, res) => {
   res.json({ test: "success" });
 });
 
-app.get("/harid", function (req, res) {
+app.get("/", function (req, res) {
   res.render("harid");
 });
 
