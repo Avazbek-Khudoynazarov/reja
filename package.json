@@ -8,7 +8,7 @@
     "training": "nodemon training.js",
     "dev": "nodemon server.js",
     "train": "nodemon train.js",
-    "task": "nodemon f-task.js",
+    "task": "nodemon task.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Avazbek",
