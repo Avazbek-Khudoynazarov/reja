@@ -71,3 +71,16 @@ run();
 //   if (err) console.log("ERROR:", err);
 //   console.log("javob", data);
 // });
+
+// function calculate(a , callback) {
+//   if (typeof a !== "number") callback("insert a number", null);
+//   else if(a > 100) callback(null, "more than 100");
+//   else {
+//     callback(null, "less than 100");
+//   }
+// }
+
+// calculate(140, (err, data) => {
+//   if (err) console.log("ERROR", err);
+//   console.log("javob" );
+// });
