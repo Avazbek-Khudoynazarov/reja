@@ -1,19 +1,27 @@
+function stringReverse(ele) {
+  let result = ele.split("").reverse("").join("");
+
+  return result;
+}
+
+const new_ele = stringReverse("Software");
+console.log(new_ele);
 // G TASK
 
-const number = [4, 5, 12, 78, 3];
-// console.log(number.indexOf());
+// const number = [4, 5, 12, 78, 3];
+// // console.log(number.indexOf());
 
-function findBig(number) {
-  let maxNum = number[0];
+// function findBig(number) {
+//   let maxNum = number[0];
 
-  for (let i = 0; i < number.length; i++) {
-    if (number[i] > maxNum) {
-      maxNum = number[i];
-    }
-  }
-  return number.indexOf(maxNum);
-}
-console.log(findBig(number));
+//   for (let i = 0; i < number.length; i++) {
+//     if (number[i] > maxNum) {
+//       maxNum = number[i];
+//     }
+//   }
+//   return number.indexOf(maxNum);
+// }
+// console.log(findBig(number));
 
 // function findDoubler(arr) {
 //   const newarr = arr.split("");
