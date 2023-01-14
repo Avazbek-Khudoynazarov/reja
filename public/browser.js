@@ -8,12 +8,12 @@ function itemTemplate(item) {
         <button 
         data-id="${item._id}"
         class="edit-me btn btn-secondary btn-sm mr-1">
-        Ozgartirish
+        Edit
         </button>
         <button 
         data-id="${item._id}" 
         class="delete-me btn btn-danger btn-sm">
-        Ochirish
+        Delete
         </button>
         </div>
         </li>
@@ -57,6 +57,33 @@ document.addEventListener("click", function (e) {
   }
   // edit oper
   if (e.target.classList.contains("edit-me")) {
-    alert("you have pressed edit button");
+    let userInput = prompt(
+      "0'zgartirishingizni kiriting!",
+      e.target.parentElement.parentElement.querySelector(".item-text").innerHTML
+    );
+    if (userInput) {
+      axios
+        .post("/edit-item", {
+          id: e.target.getAttribute("data-id"),
+          new_input: userInput,
+        })
+        .then((response) => {
+          console.log(response.data);
+          e.target.parentElement.parentElement.querySelector(
+            ".item-text"
+          ).innerHTML = userInput;
+        })
+        .catch((err) => {
+          console.log("iltimos qatadan harakat qling!");
+        });
+    }
   }
 });
+
+document.getElementById("clean-all"),
+  addEventListener("click", function () {
+    axios.post("/delete-all", { delete_all: true }).then((respose) => {
+      alert(respose.data.state);
+      document.location.reload();
+    });
+  });
