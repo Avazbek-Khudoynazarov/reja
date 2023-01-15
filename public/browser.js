@@ -74,7 +74,7 @@ document.addEventListener("click", function (e) {
           ).innerHTML = userInput;
         })
         .catch((err) => {
-          console.log("iltimos qatadan harakat qling!");
+          console.log("iltimos qaytadan harakat qling!");
         });
     }
   }
@@ -83,7 +83,7 @@ document.addEventListener("click", function (e) {
 document.getElementById("clean-all"),
   addEventListener("click", function () {
     axios.post("/delete-all", { delete_all: true }).then((respose) => {
-      alert(respose.data.state);
+      // alert(respose.data.state);
       document.location.reload();
     });
   });
