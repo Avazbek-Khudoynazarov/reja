@@ -1,15 +1,16 @@
 const express = require("express");
 const app = express();
 const fs = require("fs");
+// let a = 0;
 
-// let user;
-// fs.readFile("database/user.json", "utf8", (err, data) => {
-//   if (err) {
-//     console.log("ERROR", err);
-//   } else {
-//     user = JSON.parse(data);
-//   }
-// });
+let user;
+fs.readFile("database/user.json", "utf8", (err, data) => {
+  if (err) {
+    console.log("ERROR", err);
+  } else {
+    user = JSON.parse(data);
+  }
+});
 // MongoDB chaqirish
 
 const db = require("./server").db();
@@ -46,14 +47,6 @@ app.post("/delete-item", (req, res) => {
   );
 });
 
-app.post("/delete-all", (req, res) => {
-  if (req.body.delete_all) {
-    db.collection("plans").deleteMany(function () {
-      res.json({ state: "hamma rejalar ochirildi" });
-    });
-  }
-});
-
 app.post("/edit-item", (req, res) => {
   const data = req.body;
   console.log(data);
@@ -66,6 +59,14 @@ app.post("/edit-item", (req, res) => {
   );
 });
 
+app.post("/delete-all", (req, res) => {
+  if (req.body.delete_all) {
+    db.collection("plans").deleteMany(function () {
+      res.json({ state: "hamma rejalar ochirildi" });
+    });
+  }
+});
+
 app.get("/", function (req, res) {
   console.log("User entered /");
   db.collection("plans")
@@ -75,7 +76,6 @@ app.get("/", function (req, res) {
         console.log(err);
         res.end("something went wrong");
       } else {
-        console.log(data);
         res.render("reja", { items: data });
       }
     });

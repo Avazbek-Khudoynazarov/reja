@@ -80,10 +80,9 @@ document.addEventListener("click", function (e) {
   }
 });
 
-document.getElementById("clean-all"),
-  addEventListener("click", function () {
-    axios.post("/delete-all", { delete_all: true }).then((respose) => {
-      // alert(respose.data.state);
-      document.location.reload();
-    });
+document.getElementById("clean-all").addEventListener("click", function () {
+  axios.post("/delete-all", { delete_all: true }).then((respose) => {
+    alert(respose.data.state);
+    document.location.reload();
   });
+});
