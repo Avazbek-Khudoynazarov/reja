@@ -2,6 +2,7 @@ console.log("frontEnd JS ishga tushdi");
 
 function itemTemplate(item) {
   return `<li
+  style="background: orange"
         class="list-group-item list-group-item-info d-flex align-items-center justify-content-between">
         <span class="item-text"> ${item.reja}</span>
         <div>

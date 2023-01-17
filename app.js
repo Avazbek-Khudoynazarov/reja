@@ -20,6 +20,7 @@ const mongodb = require("mongodb");
 app.use(express.static("public"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+let a = 0;
 
 // 2: Session code
 // 3: Views code
@@ -68,6 +69,8 @@ app.post("/delete-all", (req, res) => {
 });
 
 app.get("/", function (req, res) {
+  a++;
+  console.log("connected client instances:", a);
   console.log("User entered /");
   db.collection("plans")
     .find()
