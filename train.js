@@ -1,8 +1,21 @@
-const ints = [0, -15, 5, -3, 2, -8, 9, -11];
-const events = ints.filter(function (item) {
-  return item > 0;
-});
-console.log(events);
+function hisoblash(num) {
+  if (num == 0) {
+    return 0;
+  } else if (num <= -1) {
+    return -1;
+  } else if ((num) => 1) {
+    return 1;
+  }
+}
+
+const res = hisoblash(0);
+console.log(res);
+
+// const ints = [0, -15, 5, -3, 2, -8, 9, -11];
+// const events = ints.filter(function (item) {
+//   return item > 0;
+// });
+// console.log(events);
 
 // const list = [
 //   "yaxshi talaba boling",
